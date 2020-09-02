@@ -50,14 +50,18 @@ body {
 
 .name {
   font-family: "MadeGentle";
-      color: #FFF;
-      font-size: 6em;
-      text-align: center;
-      line-height: 1em;
-      bottom: 250px;
-      margin: 0;
-      width: 100%;
-      position: absolute;
+  color: #FFF;
+  font-size: 6em;
+  text-align: center;
+  line-height: 1em;
+  bottom: 250px;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.name, .social {
+  text-shadow: 0 4px 4px rgba(0,0,0,.3);
 }
 
 .social {
