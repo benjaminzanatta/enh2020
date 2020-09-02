@@ -105,7 +105,7 @@ body {
 }
 .end .merci {
   border-bottom: 2px solid white;
-  line-height: 100px;
+  line-height: 140px;
 }
 .end p {
   font-family: "MadeGentle";
@@ -225,5 +225,8 @@ body {
     }
     .end p {
       font-size: 3em;
+    }
+    .end .merci {
+    line-height: 100px;
     }
 }
