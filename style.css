@@ -201,3 +201,28 @@ body {
   background-size: cover;
   background-position: 50% 30%;
 }
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .carousel-cell {
+      height: calc(100vh - 180px);
+      background-position: 50% 35%;
+    }
+    .flickity-page-dots {
+      bottom: 30px;
+    }
+    .social {
+      bottom: 0;
+    }
+    .flickity-viewport {
+      top: 60px;
+    }
+    .name {
+      bottom: 150px;
+    }
+    .end p {
+      font-size: 3em;
+    }
+}
