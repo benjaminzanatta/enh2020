@@ -35,7 +35,7 @@ body {
 }
 
 .flickity-page-dots {
-  bottom: 300px;
+  bottom: 305px;
 }
 .flickity-page-dots .dot {
   width: 16px;
@@ -112,6 +112,10 @@ body {
   text-align: center;
   color: #FFF;
   line-height: 1.2em;
+}
+.end a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .charlot {
