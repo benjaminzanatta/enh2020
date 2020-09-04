@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #F05248;
+  background-color: #ff4539;
   margin: 0;
 }
 
@@ -46,6 +46,14 @@ body {
 .flickity-page-dots .dot.is-selected {
   background: white;
   opacity: 1;
+}
+
+.start {
+  border: 0;
+  font-family: "MadeGentle";
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
 }
 
 .name {
@@ -104,16 +112,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F05248;
   border: 0;
 }
 .end .merci {
   border-bottom: 2px solid white;
-  line-height: 140px;
+  line-height: 100px;
 }
 .end p {
   font-family: "MadeGentle";
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   color: #FFF;
   line-height: 1.2em;
