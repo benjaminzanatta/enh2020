@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: MadeGentle;
     src: url("madegentle.otf") format("opentype");
@@ -49,11 +53,29 @@ body {
 }
 
 .start {
+  background-color: #fff;
   border: 0;
-  font-family: "MadeGentle";
-  font-size: 3em;
-  color: #FFF;
+  overflow: hidden;
+}
+.start p {
+  font-family: Geomanist;
+  font-weight: 700;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #2D2A26;
   text-align: center;
+}
+.start::after {
+  content: url(enhu.svg);
+  display: block;
+  clear: both;
+  width: 258px;
+  transform: scale(3);
+  height: auto;
+  position: absolute;
+  top: 750px;
+  left: 620px;
+  opacity: 0.3;
 }
 
 .name {
