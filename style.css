@@ -62,7 +62,7 @@ body {
   font-weight: 700;
   font-size: 4em;
   text-transform: uppercase;
-  color: #2D2A26;
+  color: yellow;
   text-align: center;
 }
 .start::after {
