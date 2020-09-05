@@ -31,13 +31,13 @@ body {
 .flickity-button { display: none; }
 
 .flickity-page-dots {
-  bottom: 305px;
+  bottom: 320px;
   /* display: none; */
 }
 
 .flickity-page-dots .dot {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   opacity: .3;
   background: white;
 }
@@ -62,7 +62,7 @@ body {
 /* WELCOME */
 
 .welcome {
-  border: 1px solid white;
+  border: 10px solid white;
   overflow: hidden;
 }
 
@@ -160,7 +160,7 @@ body {
   justify-content: center;
   align-items: center;
   */
-  border: 0;
+  border: 10px solid white;;
   font-family: "AauxProLight";
   font-size: 3em;
   text-align: center;
