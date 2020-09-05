@@ -1,10 +1,8 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 @font-face {
-    font-family: MadeGentle;
-    src: url("madegentle.otf") format("opentype");
+  font-family: MadeGentle;
+  src: url("fonts/madegentle.otf") format("opentype");
 }
 
 body {
@@ -12,109 +10,77 @@ body {
   margin: 0;
 }
 
+
+/* CAROUSEL */
+
 .main-carousel {
   width: 100vw;
   height: 100vh;
 }
 
-.flickity-viewport {
-  top: 80px;
-}
+.flickity-viewport { top: 80px; }
 
-.carousel-cell {
-  width: 80%;
-  margin-right: 30px;
-  height: calc(100vh - 480px);
-  border-radius: 48px;
-  border: 16px solid rgba(255,255,255, 1);
-  opacity: .3;
-}
-
-.carousel-cell.is-selected {
-  opacity: 1;
-}
-
-.flickity-button {
-  display: none;
-}
+.flickity-button { display: none; }
 
 .flickity-page-dots {
   bottom: 305px;
+  /* display: none; */
 }
+
 .flickity-page-dots .dot {
   width: 16px;
   height: 16px;
   opacity: .3;
   background: white;
 }
-.flickity-page-dots .dot.is-selected {
-  background: white;
-  opacity: 1;
-}
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+    opacity: 1;
+  }
 
-.start {
-  background-color: #fff;
-  border: 0;
+
+/* CELL */
+
+.carousel-cell {
+  width: 80%;
+  margin-right: 30px;
+  height: calc(100vh - 480px);
+  border-radius: 48px;
+  opacity: .3;
+}
+  .carousel-cell.is-selected { opacity: 1; }
+
+
+/* WELCOME */
+
+.welcome {
+  border: 1px solid white;
   overflow: hidden;
 }
-.start p {
-  font-family: Geomanist;
-  font-weight: 700;
-  font-size: 4em;
-  text-transform: uppercase;
-  color: yellow;
-  text-align: center;
-}
-.start::after {
-  content: url(enhu.svg);
+
+.welcome::after {
+  content: url(img/enhuw.svg);
   display: block;
   clear: both;
   width: 258px;
-  transform: scale(3);
   height: auto;
+  transform: scale(3);
   position: absolute;
   top: 750px;
   left: 620px;
-  opacity: 0.3;
+  opacity: 1;
 }
 
-.name {
-  font-family: "MadeGentle";
-  color: #FFF;
-  font-size: 6em;
-  text-align: center;
-  line-height: 1em;
-  bottom: 250px;
-  margin: 0;
-  width: 100%;
-  position: absolute;
+
+/* STUDENTS */
+
+.student {
+  border: 16px solid rgba(255,255,255, 1);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
-.name, .social {
-  text-shadow: 0 4px 4px rgba(0,0,0,.3);
-}
-
-.social {
-  font-family: "MadeGentle";
-  text-align: center;
-  color: #FFF;
-  font-size: 3em;
-  position: absolute;
-  bottom: 80px;
-  width: 100%;
-}
-.social a {
-  color: #FFF;
-  text-decoration: none;
-  margin: 0 40px;
-  border-bottom: 2px solid white;
-}
-
-.megan > .social a {
-  margin: 0 20px;
-}
-
-.pacing {
+.student .pacing {
   position: relative;
   top: 20px;
   left: 20px;
@@ -130,128 +96,81 @@ body {
   color: #ff4539;
 }
 
-.end {
+.student .name {
+  font-family: "MadeGentle";
+  color: #FFF;
+  font-size: 6em;
+  text-align: center;
+  line-height: 1em;
+  bottom: 250px;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.student .social {
+  font-family: "MadeGentle";
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+  .student .social a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 40px;
+    border-bottom: 2px solid white;
+  }
+
+.name,
+.social { text-shadow: 0 4px 4px rgba(0,0,0,.3); }
+
+.charlot   { background-image: url(photo/charlot.jpg);  }
+.antony    { background-image: url(photo/antony.jpg);   }
+.camille   { background-image: url(photo/camille.jpg);  }
+.olivier   { background-image: url(photo/olivier.jpg);  }
+.lucas     { background-image: url(photo/lucas.jpg);    }
+.xavier    { background-image: url(photo/xavier.jpg);   }
+.noemie    { background-image: url(photo/noemie.jpg);   }
+.nicolas   { background-image: url(photo/nicolas.jpg);  }
+.joelle    { background-image: url(photo/joelle.jpg);   }
+.benjamin  { background-image: url(photo/benjamin.jpg); }
+.vincent   { background-image: url(photo/vincent.jpg);  }
+.julien    { background-image: url(photo/julien.jpg);   }
+.megan     { background-image: url(photo/megan.jpg);    }
+  .megan > .social a { margin: 0 20px; }
+.alex      { background-image: url(photo/alex.jpg);     }
+
+
+/* CREDITS */
+
+.credits {
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
+  */
   border: 0;
-}
-.end .merci {
-  border-bottom: 2px solid white;
-  line-height: 100px;
-}
-.end p {
-  font-family: "MadeGentle";
+  font-family: "Aaux ProLight";
   font-size: 3em;
   text-align: center;
   color: #FFF;
   line-height: 1.2em;
 }
-.end a {
-  text-decoration: none;
-  color: #FFF;
-}
-.end img {
-  width: 35%;
-  height: auto;
-  margin-top: 160px;
-}
-/*
-.logo {
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-  text-align: center;
-}
-.logo img {
-  width: 35%;
-  height: auto;
-}
-*/
+  .credits .title {
+    font-family: "Aaux ProBold";
+    border-bottom: 2px solid white;
+    line-height: 100px;
+  }
+  .credits a {
+    text-decoration: none;
+    color: #FFF;
+  }
 
-.charlot {
-  background-image: url(photo/charlot.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
 
-.antony {
-  background-image: url(photo/antony.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.camille {
-  background-image: url(photo/camille.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.olivier {
-  background-image: url(photo/olivier.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.lucas {
-  background-image: url(photo/lucas.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.xavier {
-  background-image: url(photo/xavier.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.noemie {
-  background-image: url(photo/noemie.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.nicolas {
-  background-image: url(photo/nicolas.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.joelle {
-  background-image: url(photo/joelle.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.benjamin {
-  background-image: url(photo/benjamin.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.vincent {
-  background-image: url(photo/vincent.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.julien {
-  background-image: url(photo/julien.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.megan {
-  background-image: url(photo/megan.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
-
-.alex {
-  background-image: url(photo/alex.jpg);
-  background-size: cover;
-  background-position: 50% 30%;
-}
+/* DESKTOP */
 
 @media screen
   and (min-device-width: 1200px)
@@ -261,24 +180,12 @@ body {
       height: calc(100vh - 180px);
       background-position: 50% 35%;
     }
-    .flickity-page-dots {
-      bottom: 30px;
-    }
-    .social {
-      bottom: 0;
-    }
-    .flickity-viewport {
-      top: 60px;
-    }
-    .name {
-      bottom: 150px;
-    }
-    .end p {
-      font-size: 2em;
-    }
-    .end .merci {
-    line-height: 60px;
-    }
+    .flickity-page-dots { bottom: 30px; }
+    .social { bottom: 0; }
+    .flickity-viewport { top: 60px; }
+    .name { bottom: 150px; }
+    .end p { font-size: 2em; }
+    .end .merci { line-height: 60px; }
     .end img {
       width: 15%;
       height: auto;
