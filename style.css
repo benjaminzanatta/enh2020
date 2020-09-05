@@ -170,6 +170,7 @@ body {
   .credits .title {
     font-family: "AauxProBold";
     border-bottom: 2px solid white;
+    padding-bottom: 5px;
     line-height: 100px;
   }
   .credits a {
