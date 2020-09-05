@@ -4,6 +4,14 @@
   font-family: MadeGentle;
   src: url("fonts/madegentle.otf") format("opentype");
 }
+@font-face {
+  font-family: AauxProLight;
+  src: url("fonts/AauxPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: AauxProBold;
+  src: url("fonts/AauxPro-Bold.ttf") format("truetype");
+}
 
 body {
   background-color: #ff4539;
