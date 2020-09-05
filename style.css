@@ -161,14 +161,14 @@ body {
   align-items: center;
   */
   border: 0;
-  font-family: "Aaux ProLight";
+  font-family: "AauxProLight";
   font-size: 3em;
   text-align: center;
   color: #FFF;
   line-height: 1.2em;
 }
   .credits .title {
-    font-family: "Aaux ProBold";
+    font-family: "AauxProBold";
     border-bottom: 2px solid white;
     line-height: 100px;
   }
