@@ -64,8 +64,17 @@ body {
 .welcome {
   border: 0px solid white;
   overflow: hidden;
-  background-image: url(img/welcome@2x.png);
-  background-size: cover;
+  background: rgb(174,174,174);
+  background: linear-gradient(180deg, rgba(174,174,174,1) 0%, rgba(214,214,214,1) 100%);
+}
+
+.welcome .arrow {
+  width: 100px;
+  height: 100px;
+  background-image: url(img/arrow.svg);
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
 }
 
 /* .welcome::after {
