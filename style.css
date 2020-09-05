@@ -133,6 +133,11 @@ body {
     line-height: 80px;
     color: #2D2A26;
   }
+  .welcome .tonight .extra {
+    font-family: "MadeGentle";
+    font-size: 40px;
+    color: #2D2A26;
+  }
 
 .welcome .arrow {
   width: 100px;
@@ -213,7 +218,9 @@ body {
 .social { text-shadow: 0 4px 4px rgba(0,0,0,.3); }
 
 .charlot   { background-image: url(photo/charlot.jpg);  }
+  .charlot { background-position: 45% 30%; }
 .antony    { background-image: url(photo/antony.jpg);   }
+  .antony { background-position: 45% 30%; }
 .camille   { background-image: url(photo/camille.jpg);  }
 .olivier   { background-image: url(photo/olivier.jpg);  }
 .lucas     { background-image: url(photo/lucas.jpg);    }
@@ -221,36 +228,36 @@ body {
 .noemie    { background-image: url(photo/noemie.jpg);   }
 .nicolas   { background-image: url(photo/nicolas.jpg);  }
 .joelle    { background-image: url(photo/joelle.jpg);   }
+  .joelle { background-position: 40% 30%; }
 .benjamin  { background-image: url(photo/benjamin.jpg); }
 .vincent   { background-image: url(photo/vincent.jpg);  }
 .julien    { background-image: url(photo/julien.jpg);   }
 .megan     { background-image: url(photo/megan.jpg);    }
   .megan > .social a { margin: 0 20px; }
 .alex      { background-image: url(photo/alex.jpg);     }
+  .alex { background-position: 40% 30%; }
 
 
 /* CREDITS */
 
 .credits {
-  /*
   display: flex;
   justify-content: center;
   align-items: center;
-  */
-  font-family: "AauxProLight";
+  font-family: "MadeGentle";
   font-size: 3em;
   text-align: center;
   color: #FFF;
   line-height: 1.2em;
 }
+  .credits p { margin: 0; }
   .credits .title {
-    font-family: "AauxProBold";
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
-    line-height: 100px;
+    font-family: "AauxProLight";
+    line-height: 1.5em;
   }
   .credits a {
     text-decoration: none;
+    border-bottom: 1px solid white;
     color: #FFF;
   }
 
@@ -267,6 +274,19 @@ body {
       height: calc(100vh - 180px);
       background-position: 50% 35%;
     }
+    .welcome .title {
+      padding: 40px 0 0 60px;
+      line-height: 50px;
+    }
+    .welcome .logo {
+      left: 0;
+      top: 400px;
+    }
+    .welcome .logo .full {
+      transform: scale(0.6);
+    }
+    .welcome .logo .letter { display: none; }
+    .welcome .tonight { display: none; }
     .credits {
       font-size: 1.5em;
     }
