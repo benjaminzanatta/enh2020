@@ -12,6 +12,14 @@
   font-family: AauxProBold;
   src: url("fonts/AauxPro-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: AauxProBlack;
+  src: url("fonts/AauxPro-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: AauxProUltra;
+  src: url("fonts/AauxPro-Ultra.ttf") format("truetype");
+}
 
 body {
   background-color: #ff4539;
@@ -67,6 +75,64 @@ body {
   background: rgb(174,174,174);
   background: linear-gradient(180deg, rgba(174,174,174,1) 0%, rgba(214,214,214,1) 100%);
 }
+
+.welcome .title {
+  padding: 120px 0 0 60px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+  .welcome .title .part1 {
+    font-family: "AauxProBlack";
+    font-size: 50px;
+    color: #2D2A26;
+  }
+  .welcome .title .part2 {
+    font-family: "AauxProUltra";
+    font-size: 80px;
+    color: #2D2A26;
+  }
+  .welcome .title .part3 {
+    font-family: "AauxProUltra";
+    font-size: 80px;
+    color: #ff4539;
+  }
+
+.welcome .logo {
+  position: absolute;
+  top: 385px;
+  left: 324px;
+}
+  .welcome .logo .full {
+    width: 386px;
+    height: 174px;
+    background-image: url(img/logo-enh.svg);
+    margin-bottom: 30px;
+  }
+  .welcome .logo .letter {
+    width: 720px;
+    height: 600px;
+    background-image: url(img/logo-u.svg);
+  }
+
+.welcome .tonight {
+  position: absolute;
+  bottom: 220px;
+  left: 60px;
+}
+  .welcome .tonight .date {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: "AauxProBold";
+    font-size: 40px;
+    color: #2D2A26;
+    text-transform: uppercase;
+  }
+  .welcome .tonight .place {
+    font-family: "MadeGentle";
+    font-size: 70px;
+    line-height: 80px;
+    color: #2D2A26;
+  }
 
 .welcome .arrow {
   width: 100px;
@@ -171,7 +237,6 @@ body {
   justify-content: center;
   align-items: center;
   */
-  border: 10px solid white;;
   font-family: "AauxProLight";
   font-size: 3em;
   text-align: center;
