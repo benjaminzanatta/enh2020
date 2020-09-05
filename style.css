@@ -62,7 +62,7 @@ body {
 /* WELCOME */
 
 .welcome {
-  border: 10px solid white;
+  border: 0px solid white;
   overflow: hidden;
   background-image: url(img/welcome@2x.png);
   background-size: cover;
